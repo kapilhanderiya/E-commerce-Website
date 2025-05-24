@@ -2,7 +2,6 @@
 
 E-Commerce Store is a full-stack web application that enables users to browse products, manage a shopping cart, apply coupons, and securely complete purchases. The platform features user authentication, an admin dashboard for product and analytics management, and robust data handling with MongoDB, Redis, and Cloudinary.
 
-![Demo App](frontend/public/screenshot-for-readme.png)
 
 ## Features
 
@@ -62,5 +61,3 @@ npm run build
 ```
 
 ---
-
-> For more details, see the documentation or contact the project maintainer.
