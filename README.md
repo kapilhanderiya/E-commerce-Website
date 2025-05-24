@@ -1,57 +1,66 @@
-<h1 align="center">E-Commerce Store 🛒</h1>
+# E-Commerce Store - Full Stack Online Shopping Platform
 
-![Demo App](/frontend/public/screenshot-for-readme.png)
+E-Commerce Store is a full-stack web application that enables users to browse products, manage a shopping cart, apply coupons, and securely complete purchases. The platform features user authentication, an admin dashboard for product and analytics management, and robust data handling with MongoDB, Redis, and Cloudinary.
 
-About This Course:
+![Demo App](frontend/public/screenshot-for-readme.png)
 
--   🚀 Project Setup
--   🗄️ MongoDB & Redis Integration
--   💳 Stripe Payment Setup
--   🔐 Robust Authentication System
--   🔑 JWT with Refresh/Access Tokens
--   📝 User Signup & Login
--   🛒 E-Commerce Core
--   📦 Product & Category Management
--   🛍️ Shopping Cart Functionality
--   💰 Checkout with Stripe
--   🏷️ Coupon Code System
--   👑 Admin Dashboard
--   📊 Sales Analytics
--   🎨 Design with Tailwind
--   🛒 Cart & Checkout Process
--   🔒 Security
--   🛡️ Data Protection
--   🚀Caching with Redis
--   ⌛ And a lot more...
+## Features
+
+- **Product Browsing & Categories**: Explore products by category with advanced filtering and search.
+- **Shopping Cart**: Add, update, or remove products from your cart with real-time price calculations.
+- **Coupon System**: Apply discount codes for special offers and promotions.
+- **Secure Payments**: Integrated Stripe payments for safe and reliable transactions.
+- **User Authentication**: Secure signup, login, and logout with JWT-based authorization.
+- **Admin Dashboard**: Manage products, categories, orders, and view sales analytics.
+- **Order Management**: Track order status and history.
+- **Image Uploads**: Product images are stored securely using Cloudinary.
+- **Global State Management**: Zustand is used for efficient and lightweight state management.
+- **Error Handling**: Comprehensive error handling for both frontend and backend.
+
+## Tech Stack
+
+### Frontend
+- **React**: For building the user interface.
+- **Vite**: For fast development and build processes.
+- **TailwindCSS**: For styling.
+- **Zustand**: For state management.
+- **React Router**: For client-side routing.
+- **Stripe.js**: For payment integration.
+
+### Backend
+- **Node.js**: For server-side logic.
+- **Express**: For building RESTful APIs.
+- **MongoDB**: For database storage.
+- **Mongoose**: For object data modeling.
+- **Redis**: For caching and session management.
+- **Cloudinary**: For image storage.
+- **JWT**: For secure authentication.
+
+## Setup
 
 ### Setup .env file
 
-```bash
+```env
 PORT=5000
-MONGO_URI=your_mongo_uri
+MONGODB_URI=your-mongodb-uri
+JWT_SECRET=your-jwt-secret
 
-UPSTASH_REDIS_URL=your_redis_url
+CLOUDINARY_CLOUD_NAME=your-cloudinary-cloud-name
+CLOUDINARY_API_KEY=your-cloudinary-api-key
+CLOUDINARY_API_SECRET=your-cloudinary-api-secret
 
-ACCESS_TOKEN_SECRET=your_access_token_secret
-REFRESH_TOKEN_SECRET=your_refresh_token_secret
+STRIPE_SECRET_KEY=your-stripe-secret-key
+REDIS_URL=your-redis-url
 
-CLOUDINARY_CLOUD_NAME=your_cloud_name
-CLOUDINARY_API_KEY=your_api_key
-CLOUDINARY_API_SECRET=your_api_secret
-
-STRIPE_SECRET_KEY=your_stripe_secret_key
-CLIENT_URL=http://localhost:5173
 NODE_ENV=development
 ```
 
-### Run this app locally
+### Build the app
 
 ```shell
 npm run build
 ```
 
-### Start the app
+---
 
-```shell
-npm run start
-```
+> For more details, see the documentation or contact the project maintainer.
