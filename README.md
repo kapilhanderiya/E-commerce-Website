@@ -1,7 +1,6 @@
-# E-Commerce Store - Full Stack Online Shopping Platform
+ # E-Commerce Store - Full Stack Online Shopping Platform
 
 E-Commerce Store is a full-stack web application that enables users to browse products, manage a shopping cart, apply coupons, and securely complete purchases. The platform features user authentication, an admin dashboard for product and analytics management, and robust data handling with MongoDB, Redis, and Cloudinary.
-
 
 ## Features
 
@@ -13,7 +12,7 @@ E-Commerce Store is a full-stack web application that enables users to browse pr
 - **Admin Dashboard**: Manage products, categories, orders, and view sales analytics.
 - **Order Management**: Track order status and history.
 - **Image Uploads**: Product images are stored securely using Cloudinary.
-- **Global State Management**: Zustand is used for efficient and lightweight state management.
+- **Global State Management**: Redux Toolkit is used for efficient and scalable state management.
 - **Error Handling**: Comprehensive error handling for both frontend and backend.
 
 ## Tech Stack
@@ -22,7 +21,7 @@ E-Commerce Store is a full-stack web application that enables users to browse pr
 - **React**: For building the user interface.
 - **Vite**: For fast development and build processes.
 - **TailwindCSS**: For styling.
-- **Zustand**: For state management.
+- **Redux Toolkit**: For state management.
 - **React Router**: For client-side routing.
 - **Stripe.js**: For payment integration.
 
@@ -60,8 +59,6 @@ NODE_ENV=development
 npm run build
 ```
 ### Start the app
-
 ```shell
 npm run start
 ```
-
